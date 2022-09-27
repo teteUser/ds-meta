@@ -1,5 +1,6 @@
 package com.devsuperior.dsmeta.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,6 +22,7 @@ public class Sale {
     private Integer visited;
     private Integer deals;
     private Double amount;
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate date;
 
 }
