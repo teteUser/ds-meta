@@ -13,6 +13,9 @@ function handleClick(id : number) {
     .then(response => {
         toast.info("SMS enviado com sucesso!");
     })
+    .catch(error => {
+        toast.info("Não foi possível enviar a SMS!");    
+    )
 }
 
 function NotificationButton({saleId} : Props) {
